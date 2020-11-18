@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280sp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_transparent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5sp">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/button_cancel"
+        android:layout_width="21sp"
+        android:layout_height="21sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="5sp"
+        android:background="@drawable/cancel"/>
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YZN"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本： 1.2"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_below="@+id/textView_app_name"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="made by Hilex"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView_version"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-10-2"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_below="@+id/textView_author"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginBottom="20sp"/>
+
+
+</RelativeLayout>

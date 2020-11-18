@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ShineButton">
+        <attr name="btn_color" format="color" />
+        <attr name="btn_fill_color" format="color" />
+        <attr name="shine_count" format="integer" />
+        <attr name="shine_turn_angle" format="float" />
+        <attr name="small_shine_offset_angle" format="float" />
+        <attr name="enable_flashing" format="boolean" />
+        <attr name="allow_random_color" format="boolean" />
+        <attr name="small_shine_color" format="color" />
+        <attr name="big_shine_color" format="color" />
+        <attr name="shine_animation_duration" format="integer" />
+        <attr name="click_animation_duration" format="integer" />
+        <attr name="shine_distance_multiple" format="float" />
+        <attr name="shine_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PorterImageView">
+        <attr name="siShape" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="vericationCodeView">
+        <!--输入框的数量-->
+        <attr name="vcv_et_number" format="integer" />
+        <!--输入类型-->
+        <attr name="vcv_et_inputType">
+            <enum name="number" value="0" />
+            <enum name="numberPassword" value="1" />
+            <enum name="text" value="2" />
+            <enum name="textPassword" value="3" />
+        </attr>
+        <!--输入框的宽度-->
+        <attr name="vcv_et_width" format="dimension|reference" />
+        <!--输入框文字颜色-->
+        <attr name="vcv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="vcv_et_text_size" format="dimension|reference" />
+        <!--输入框背景-->
+        <attr name="vcv_et_bg" format="reference" />
+        <!--光标样式-->
+        <attr name="vcv_et_cursor" format="reference" />
+        <!--是否隐藏光标-->
+        <attr name="vcv_et_cursor_visible" format="boolean" />
+        <!--输入框间距，不输入则代表平分-->
+        <attr name="vcv_et_spacing" format="dimension|reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="offColor" format="color"/>
+        <attr name="offColorDark" format="color"/>
+        <attr name="barColor" format="color"/>
+        <attr name="bgColor" format="color"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="ratioAspect" format="float"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlaskView">
+        <!--The stroke color of flask-->
+        <attr name="stroke_color" format="color">#ffffff</attr>
+
+        <!--The water color-->
+        <attr name="water_color" format="color">#052EAA</attr>
+
+        <!--The bubble color-->
+        <attr name="bubble_color" format="color">#FFEB3B</attr>
+
+        <!--The max radius of the bubbles-->
+        <attr name="bubble_max_radius" format="integer">2</attr>
+
+        <!--The min radius of the bubbles-->
+        <attr name="bubble_min_radius" format="integer">10</attr>
+
+        <!--The max speed of the bubbles-->
+        <attr name="bubble_max_speed" format="float">7</attr>
+
+        <!--The min speed of the bubbles-->
+        <attr name="bubble_min_speed" format="float">1</attr>
+
+        <!--Number of bubbles that can coexist at the same time-->
+        <attr name="bubble_max_number" format="integer">20</attr>
+
+        <!--The creation of the bubble interval in millis-->
+        <attr name="bubble_creation_interval" format="integer">70</attr>
+
+        <!--The stoke width of the flask-->
+        <attr name="stroke_width" format="dimension">80</attr>
+
+        <!--The water level to the percentage of the height of the flask-->
+        <attr name="water_height_percent" format="float">50</attr>
+    </declare-styleable>
+</resources>

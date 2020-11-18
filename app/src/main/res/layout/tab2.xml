@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:layout_alignParentTop="true"
+        android:background="#00000000">
+
+        <RelativeLayout
+            android:id="@+id/layout_type"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:background="@drawable/border_transparent"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView_type"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:text="@string/type"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="7sp"
+                android:layout_marginTop="5sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="100sp"
+                android:layout_height="40sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_toEndOf="@id/textView_type"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="5sp"
+                android:entries="@array/type" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_search"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginStart="5sp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/layout_type"
+            android:background="@drawable/border_transparent">
+
+            <ImageView
+                android:id="@+id/imageView_search"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/search"/>
+
+            <EditText
+                android:id="@+id/editText_search"
+                android:layout_width="190sp"
+                android:layout_height="40sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@id/imageView_search"
+                android:layout_marginStart="2sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:hint="@string/search"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/layout_top">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/layout_refresh_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView_bill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00FFAE"
+                android:dividerHeight="10sp"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

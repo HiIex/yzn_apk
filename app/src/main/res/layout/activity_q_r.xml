@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QRActivity"
+    android:background="@drawable/hualian">
+
+    <include layout="@layout/title3"/>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="3sp"
+        android:layout_marginEnd="3sp"
+        android:background="@drawable/border_white_transparent">
+
+        <TextView
+            android:id="@+id/textView_QRCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="15sp"
+            android:text="@string/QRCode"
+            android:fontFamily="@font/kai"
+            android:textSize="23sp"/>
+
+        <com.example.yzn.activity.ui.CircleImageView
+            android:id="@+id/circleView"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_below="@+id/textView_QRCard"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:src="@drawable/hongzaomantou"/>
+
+        <TextView
+            android:id="@+id/textView_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@+id/textView_QRCard"
+            android:layout_marginTop="16sp"
+            android:layout_toEndOf="@id/circleView"
+            android:layout_marginStart="10sp"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/imageView_male"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@+id/textView_QRCard"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@+id/textView_nickname"
+            android:layout_marginStart="7sp"
+            android:background="@drawable/boy"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/imageView_female"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@+id/textView_QRCard"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@+id/textView_nickname"
+            android:layout_marginStart="7sp"
+            android:background="@drawable/girl"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textView_province"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@+id/textView_nickname"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@id/circleView"
+            android:layout_marginStart="10sp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textView_city"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@+id/textView_nickname"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@id/textView_province"
+            android:layout_marginStart="5sp"
+            android:textSize="14sp"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_QRImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_city"
+            android:layout_marginTop="15sp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_QR"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView_share"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_below="@+id/layout_QRImage"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="15sp"
+            android:background="@drawable/share"/>
+
+        <TextView
+            android:id="@+id/textView_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shareto"
+            android:layout_below="@+id/layout_QRImage"
+            android:layout_marginTop="33sp"
+            android:textSize="17sp"
+            android:layout_toEndOf="@id/imageView_share"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/kai" />
+
+        <ImageButton
+            android:id="@+id/imageButton_qq"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/textView_share"
+            android:layout_marginStart="25sp"
+            android:background="@drawable/qq"/>
+
+        <TextView
+            android:id="@+id/textView_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qq"
+            android:textSize="15sp"
+            android:layout_marginStart="32sp"
+            android:layout_below="@+id/imageButton_qq"
+            android:layout_marginTop="5sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_wechat"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/textView_share"
+            android:layout_toEndOf="@id/imageButton_qq"
+            android:layout_marginStart="45sp"
+            android:background="@drawable/wechat"/>
+
+        <TextView
+            android:id="@+id/textView_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wechat"
+            android:textSize="15sp"
+            android:layout_below="@+id/imageButton_qq"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@id/imageButton_qq"
+            android:layout_marginStart="45sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_download"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/textView_share"
+            android:layout_toEndOf="@id/imageButton_wechat"
+            android:layout_marginStart="45sp"
+            android:background="@drawable/download"/>
+
+        <TextView
+            android:id="@+id/textView_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_to_local"
+            android:textSize="15sp"
+            android:layout_below="@+id/imageButton_download"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@id/imageButton_wechat"
+            android:layout_marginStart="33sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

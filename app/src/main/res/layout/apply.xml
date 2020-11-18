@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/kai"
+            android:text="好友申请"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:textSize="21sp"/>
+
+        <ImageButton
+            android:id="@+id/button_cancel"
+            android:layout_width="21sp"
+            android:layout_height="21sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:background="@drawable/cancel"/>
+
+        <com.example.yzn.activity.ui.CircleImageView
+            android:id="@+id/circleView"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_below="@+id/textView_title"
+            android:src="@drawable/hongzaomantou"/>
+
+        <TextView
+            android:id="@+id/textView_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_marginTop="16sp"
+            android:layout_toEndOf="@id/circleView"
+            android:layout_marginStart="10sp"
+            android:layout_below="@+id/textView_title"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/imageView_male"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_toEndOf="@+id/textView_nickname"
+            android:layout_marginStart="7sp"
+            android:background="@drawable/boy"
+            android:layout_below="@id/textView_title"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/imageView_female"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="16sp"
+            android:layout_toEndOf="@+id/textView_nickname"
+            android:layout_marginStart="7sp"
+            android:background="@drawable/girl"
+            android:layout_below="@id/textView_title"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textView_province"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@+id/textView_nickname"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@id/circleView"
+            android:textColor="#000000"
+            android:layout_marginStart="10sp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/textView_city"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@+id/textView_nickname"
+            android:layout_marginTop="5sp"
+            android:textColor="#000000"
+            android:layout_toEndOf="@id/textView_province"
+            android:layout_marginStart="5sp"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_information_inside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_city"
+            android:layout_marginTop="20sp">
+
+
+            <ImageView
+                android:id="@+id/imageView_birthday"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginTop="0sp"
+                android:layout_marginStart="25sp"
+                android:background="@drawable/birthday"/>
+
+            <TextView
+                android:id="@+id/textView_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageView_birthday"
+                android:layout_marginStart="10sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+
+            <ImageView
+                android:id="@+id/imageView_job"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_below="@+id/imageView_birthday"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="25sp"
+                android:background="@drawable/job"/>
+
+            <TextView
+                android:id="@+id/textView_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/imageView_birthday"
+                android:layout_marginTop="20sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@+id/imageView_job"
+                android:layout_marginStart="10sp"
+                android:text="@string/job"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView_job_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_birthday"
+                android:layout_marginTop="20sp"
+                android:layout_toEndOf="@+id/textView_job"
+                android:textColor="#000000"
+                android:layout_marginStart="10sp"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+
+            <ImageView
+                android:id="@+id/imageView_company"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_below="@+id/imageView_job"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginStart="25sp"
+                android:background="@drawable/company"/>
+
+            <TextView
+                android:id="@+id/textView_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView_job"
+                android:layout_marginTop="20sp"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_toEndOf="@+id/imageView_company"
+                android:layout_marginStart="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/company"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView_company_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView_job"
+                android:layout_marginTop="20sp"
+                android:layout_toEndOf="@+id/textView_company"
+                android:layout_marginStart="10sp"
+                android:layout_marginBottom="10sp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/layout_version"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp">
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="120sp"
+            android:layout_height="40sp"
+            android:gravity="center"
+            android:background="@drawable/ripple_white_blue"
+            android:text="@string/friend_confirm"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

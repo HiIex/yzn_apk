@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0462FA">
+
+    <com.example.yzn.activity.ui.CircleImageView
+        android:id="@+id/title_left"
+        android:layout_width="30sp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:onClick="onClickHeadPicture"
+        android:src="@drawable/hongzaomantou"/>
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="     YZN"/>
+
+    <ImageButton
+        android:id="@+id/title_version"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/ripple_version"
+        android:layout_margin="5dp" />
+
+    <ImageButton
+        android:id="@+id/title_scan"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:background="@drawable/ripple_scan"
+        android:layout_margin="5dp" />
+
+</LinearLayout>
